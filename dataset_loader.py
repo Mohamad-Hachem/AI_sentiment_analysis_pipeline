@@ -3,10 +3,31 @@ from datasets import load_dataset
 
 
 class DatasetLoader:
+    """
+    Handles loading and exploration of HuggingFace datasets.
+    Provides utilities for inspecting, previewing, and selecting
+    columns for downstream pipeline processing.
 
-    def __init__(self, dataset_path="mteb/tweet_sentiment_extraction"):
-        self.dataset = load_dataset(dataset_path, split="train")
+    Args:
+        dataset_id (str): HuggingFace dataset repository ID.
+        split (str): Dataset split to load (e.g. 'train', 'test').
+
+    Raises:
+        ValueError: If the specified column does not exist in the dataset.
+
+    Example:
+        >>> loader = DatasetLoader()
+        >>> loader.summary()
+        >>> loader.select_column("text")
+    """
+
+    DEFAULT_DATASET_ID = "mteb/tweet_sentiment_extraction"
+
+    def __init__(self, dataset_id: str = DEFAULT_DATASET_ID):
+        self.dataset_id = dataset_id
+        self.dataset = load_dataset(dataset_id, split="train")
         self.current_column = None
+
 
     def checking_dataset_as_pandas(self):
         """
@@ -14,12 +35,14 @@ class DatasetLoader:
         """
         return self.dataset.to_pandas()
     
+
     def printing_dataset(self, min=0,max=None):
         """
             we will be printing and showing our dataset if we want using this function
         """
         print(self.checking_dataset_as_pandas()[min:max])
     
+
     def dataset_more_information(self):
         """
             this function will allow us to know more information about our dataset such as number of columns and columns names
@@ -31,6 +54,7 @@ class DatasetLoader:
         print(information.strip())
         return information
     
+
     # the reason we are building all this functions is to allow this class to be very flexible and used on many different datasets
     def choosing_a_column_to_work_with(self, column_name):
         """
@@ -46,6 +70,7 @@ class DatasetLoader:
         
         return self.current_column
 
+
     def ask_user_to_choose_a_column_to_work_with(self):
         """
             giving the user the option to choose a column to work with
@@ -53,6 +78,16 @@ class DatasetLoader:
         user_column_choice = input(f"these are our columns: {self.dataset.column_names} please choose one to work with \n")
 
         return self.choosing_a_column_to_work_with(user_column_choice.strip())
+    
+
+    def __repr__(self) -> str:
+        return (
+            f"DatasetLoader("
+            f"dataset_id='{self.dataset_id}', "
+            f"rows={len(self.dataset)}, "
+            f"columns={self.dataset.column_names})"
+        )
 
 x = DatasetLoader()
+print(x)
 print(x.ask_user_to_choose_a_column_to_work_with())
