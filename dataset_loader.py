@@ -1,10 +1,6 @@
 # pip install transformers datasets ipython
-from hardware_preparation import torch, gpu_preparation 
-import transformers
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
 from datasets import load_dataset
-from IPython.display import display, Markdown
-import random
+
 
 class DatasetLoader:
 
