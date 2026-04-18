@@ -16,6 +16,7 @@ def gpu_preparation():
         print(f"GPU detected: {torch.cuda.get_device_name(0)}")
         torch.set_default_device("cuda")
         print("PyTorch default device set to CUDA(GPU)")
+        return True
     else:
         print("WARNING: No GPU detected. Performance will be slow")
-    
+        return False

@@ -7,18 +7,6 @@ class DatasetLoader:
     Handles loading and exploration of HuggingFace datasets.
     Provides utilities for inspecting, previewing, and selecting
     columns for downstream pipeline processing.
-
-    Args:
-        dataset_id (str): HuggingFace dataset repository ID.
-        split (str): Dataset split to load (e.g. 'train', 'test').
-
-    Raises:
-        ValueError: If the specified column does not exist in the dataset.
-
-    Example:
-        >>> loader = DatasetLoader()
-        >>> loader.summary()
-        >>> loader.select_column("text")
     """
 
     DEFAULT_DATASET_ID = "mteb/tweet_sentiment_extraction"
@@ -54,7 +42,6 @@ class DatasetLoader:
         print(information.strip())
         return information
     
-
     # the reason we are building all this functions is to allow this class to be very flexible and used on many different datasets
     def choosing_a_column_to_work_with(self, column_name):
         """
