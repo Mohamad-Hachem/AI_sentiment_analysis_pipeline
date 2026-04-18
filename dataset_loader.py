@@ -75,6 +75,7 @@ class DatasetLoader:
             f"columns={self.dataset.column_names})"
         )
 
-x = DatasetLoader()
-print(x)
-print(x.ask_user_to_choose_a_column_to_work_with())
+###############
+#x = DatasetLoader()
+#print(x)
+#print(x.ask_user_to_choose_a_column_to_work_with())
