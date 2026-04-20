@@ -67,6 +67,21 @@ class DatasetLoader:
         return self.choosing_a_column_to_work_with(user_column_choice.strip())
     
 
+    def ask_user_to_choose_a_column_to_work_on_the_dataset(self):
+        """
+            giving the user the option to choose a column to work with
+        """
+        user_choice = input(f"these are our columns: {self.dataset.column_names} please choose one to work with \n")
+
+        if user_choice in self.dataset.column_names:
+            return user_choice
+        else:
+            # we will send by default the text in the dataset
+            print("you didn't enter a valid column name we will be adding text instead")
+            return 'text'
+
+
+
     def __repr__(self) -> str:
         return (
             f"DatasetLoader("

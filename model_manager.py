@@ -4,6 +4,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndB
 from datasets import load_dataset
 from IPython.display import display, Markdown
 import random
+from huggingface_hub import login
+import os
 
 
 class ModelManager:
@@ -12,18 +14,32 @@ class ModelManager:
     Supports optional 4-bit quantization via BitsAndBytes for memory-efficient inference.
     """
 
-    DEFAULT_MODEL_ID = "deepseek-ai/deepseek-coder-1.3b-instruct"
+    DEFAULT_MODEL_ID = "Qwen/Qwen2.5-3B-Instruct" # another example deepseek-ai/deepseek-coder-1.3b-instruct
 
     def __init__(self, model_id=DEFAULT_MODEL_ID, quantization_setting=True):
         """
             Initializing our Model class with our tokenizer and loading model
         """
         if gpu_preparation():
+            self.hugging_face_auth()
             self.model_id  = model_id
             self.tokenizer = self.loading_tokenizer()
             self.model = self.loading_model(self.model_id, quantization_setting)
         else:
             raise EnvironmentError("No GPU detected. This model requires a CUDA-compatible GPU to run.")
+
+
+    def hugging_face_auth(self):
+        '''
+            in order to download the right model to work on some of the model are gated by HuggingFace therefore we must authenticate first
+        '''
+        # getting token from .env
+        HUGGING_FACE_TOKEN=os.environ.get("HF_TOKEN")
+
+        # logging in
+        print("Attempting Hugging Face login...")
+        login(token=HUGGING_FACE_TOKEN)
+        print("Login successful!")
 
 
     def loading_tokenizer(self):
@@ -41,7 +57,7 @@ class ModelManager:
         """
         kwargs = {
             "device_map": "auto",
-            "dtype": torch.float16,
+            "dtype": "auto",
             "trust_remote_code": True,
         }
 
