@@ -1,6 +1,6 @@
 # pip install transformers datasets ipython
 from datasets import load_dataset
-
+from hugging_face_authentication import hugging_face_auth
 
 class DatasetLoader:
     """
@@ -12,6 +12,7 @@ class DatasetLoader:
     DEFAULT_DATASET_ID = "mteb/tweet_sentiment_extraction"
 
     def __init__(self, dataset_id: str = DEFAULT_DATASET_ID):
+        hugging_face_auth()
         self.dataset_id = dataset_id
         self.dataset = load_dataset(dataset_id, split="train")
         self.current_column = None

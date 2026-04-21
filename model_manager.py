@@ -1,11 +1,6 @@
 from hardware_preparation import torch, gpu_preparation 
-import transformers
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
-from datasets import load_dataset
-from IPython.display import display, Markdown
-import random
-from huggingface_hub import login
-import os
+from hugging_face_authentication import hugging_face_auth
 
 
 class ModelManager:
@@ -21,25 +16,12 @@ class ModelManager:
             Initializing our Model class with our tokenizer and loading model
         """
         if gpu_preparation():
-            self.hugging_face_auth()
+            hugging_face_auth()
             self.model_id  = model_id
             self.tokenizer = self.loading_tokenizer()
             self.model = self.loading_model(self.model_id, quantization_setting)
         else:
             raise EnvironmentError("No GPU detected. This model requires a CUDA-compatible GPU to run.")
-
-
-    def hugging_face_auth(self):
-        '''
-            in order to download the right model to work on some of the model are gated by HuggingFace therefore we must authenticate first
-        '''
-        # getting token from .env
-        HUGGING_FACE_TOKEN=os.environ.get("HF_TOKEN")
-
-        # logging in
-        print("Attempting Hugging Face login...")
-        login(token=HUGGING_FACE_TOKEN)
-        print("Login successful!")
 
 
     def loading_tokenizer(self):
