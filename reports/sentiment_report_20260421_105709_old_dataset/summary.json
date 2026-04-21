@@ -1,0 +1,216 @@
+{
+  "csv_path": "reports_csv_files\\old_dataset.csv",
+  "text_column_used": "text",
+  "total_rows_analyzed": 20,
+  "sentiment_counts": {
+    "negative": 12,
+    "positive": 5,
+    "neutral": 3
+  },
+  "sentiment_percentages": {
+    "negative": 60.0,
+    "positive": 25.0,
+    "neutral": 15.0
+  },
+  "average_lengths": {
+    "negative": {
+      "char_count": 54.25,
+      "word_count": 10.75
+    },
+    "neutral": {
+      "char_count": 26.67,
+      "word_count": 5.67
+    },
+    "positive": {
+      "char_count": 68.0,
+      "word_count": 12.0
+    }
+  },
+  "polarity_score": -0.35,
+  "agreement_with_labels_percent": 70.0,
+  "top_words_by_sentiment": {
+    "positive": [
+      {
+        "word": "really",
+        "count": 2
+      },
+      {
+        "word": "http",
+        "count": 1
+      },
+      {
+        "word": "www",
+        "count": 1
+      },
+      {
+        "word": "dothebouncy",
+        "count": 1
+      },
+      {
+        "word": "com",
+        "count": 1
+      },
+      {
+        "word": "smf",
+        "count": 1
+      },
+      {
+        "word": "some",
+        "count": 1
+      },
+      {
+        "word": "shameless",
+        "count": 1
+      },
+      {
+        "word": "plugging",
+        "count": 1
+      },
+      {
+        "word": "best",
+        "count": 1
+      },
+      {
+        "word": "rangers",
+        "count": 1
+      },
+      {
+        "word": "forum",
+        "count": 1
+      },
+      {
+        "word": "earth",
+        "count": 1
+      },
+      {
+        "word": "feedings",
+        "count": 1
+      },
+      {
+        "word": "baby",
+        "count": 1
+      }
+    ],
+    "neutral": [
+      {
+        "word": "test",
+        "count": 2
+      },
+      {
+        "word": "both",
+        "count": 1
+      },
+      {
+        "word": "back",
+        "count": 1
+      },
+      {
+        "word": "home",
+        "count": 1
+      },
+      {
+        "word": "now",
+        "count": 1
+      },
+      {
+        "word": "gonna",
+        "count": 1
+      },
+      {
+        "word": "miss",
+        "count": 1
+      },
+      {
+        "word": "every",
+        "count": 1
+      },
+      {
+        "word": "one",
+        "count": 1
+      }
+    ],
+    "negative": [
+      {
+        "word": "responded",
+        "count": 1
+      },
+      {
+        "word": "going",
+        "count": 1
+      },
+      {
+        "word": "sooo",
+        "count": 1
+      },
+      {
+        "word": "sad",
+        "count": 1
+      },
+      {
+        "word": "will",
+        "count": 1
+      },
+      {
+        "word": "miss",
+        "count": 1
+      },
+      {
+        "word": "here",
+        "count": 1
+      },
+      {
+        "word": "san",
+        "count": 1
+      },
+      {
+        "word": "diego",
+        "count": 1
+      },
+      {
+        "word": "boss",
+        "count": 1
+      },
+      {
+        "word": "bullying",
+        "count": 1
+      },
+      {
+        "word": "what",
+        "count": 1
+      },
+      {
+        "word": "interview",
+        "count": 1
+      },
+      {
+        "word": "leave",
+        "count": 1
+      },
+      {
+        "word": "alone",
+        "count": 1
+      }
+    ]
+  },
+  "example_rows": {
+    "positive": [
+      "http://www.dothebouncy.com/smf - some shameless plugging for the best Rangers forum on earth",
+      "2am feedings for the baby are fun when he is all smiles and coos",
+      " Journey!? Wow... u just became cooler.  hehe... (is that possible!?)",
+      "I really really like the song Love Story by Taylor Swift",
+      " oh Marly, I`m so sorry!!  I hope you find her soon!! <3 <3"
+    ],
+    "neutral": [
+      " Both of you",
+      "test test from the LG enV2",
+      "is back home now      gonna miss every one"
+    ],
+    "negative": [
+      " I`d have responded, if I were going",
+      " Sooo SAD I will miss you here in San Diego!!!",
+      "my boss is bullying me...",
+      " what interview! leave me alone",
+      " Sons of ****, why couldn`t they put them on the releases we already bought"
+    ]
+  }
+}

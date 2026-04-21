@@ -1,0 +1,56 @@
+{
+  "csv_path": "reports_csv_files\\sentiment_debug_output.csv",
+  "text_column_used": "Unnamed: 0",
+  "total_rows_analyzed": 20,
+  "sentiment_counts": {
+    "negative": 13,
+    "positive": 5,
+    "neutral": 2
+  },
+  "sentiment_percentages": {
+    "negative": 65.0,
+    "positive": 25.0,
+    "neutral": 10.0
+  },
+  "average_lengths": {
+    "negative": {
+      "char_count": 1.54,
+      "word_count": 1.0
+    },
+    "neutral": {
+      "char_count": 2.0,
+      "word_count": 1.0
+    },
+    "positive": {
+      "char_count": 1.2,
+      "word_count": 1.0
+    }
+  },
+  "polarity_score": -0.4,
+  "agreement_with_labels_percent": null,
+  "top_words_by_sentiment": {
+    "positive": [],
+    "neutral": [],
+    "negative": []
+  },
+  "example_rows": {
+    "positive": [
+      "1",
+      "4",
+      "7",
+      "8",
+      "11"
+    ],
+    "neutral": [
+      "16",
+      "18"
+    ],
+    "negative": [
+      "0",
+      "2",
+      "3",
+      "5",
+      "6"
+    ]
+  }
+}

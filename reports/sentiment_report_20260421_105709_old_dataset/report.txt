@@ -1,0 +1,43 @@
+======================================================================
+SENTIMENT ANALYSIS REPORT
+======================================================================
+Source CSV: reports_csv_files\old_dataset.csv
+Text column used: text
+Rows analyzed: 20
+
+Sentiment distribution:
+  - positive:      5 rows (25.0%)
+  - neutral :      3 rows (15.0%)
+  - negative:     12 rows (60.0%)
+
+Polarity score: -0.35
+  closer to 1 = more positive, closer to -1 = more negative
+
+Average text length by sentiment:
+  - negative: 54.25 avg chars, 10.75 avg words
+  - neutral : 26.67 avg chars, 5.67 avg words
+  - positive: 68.0 avg chars, 12.0 avg words
+
+Top keywords by sentiment:
+  - positive: really(2), http(1), www(1), dothebouncy(1), com(1), smf(1), some(1), shameless(1), plugging(1), best(1)
+  - neutral : test(2), both(1), back(1), home(1), now(1), gonna(1), miss(1), every(1), one(1)
+  - negative: responded(1), going(1), sooo(1), sad(1), will(1), miss(1), here(1), san(1), diego(1), boss(1)
+
+Agreement with original labels: 70.0%
+
+Sample examples:
+
+POSITIVE EXAMPLES:
+  1. http://www.dothebouncy.com/smf - some shameless plugging for the best Rangers forum on earth
+  2. 2am feedings for the baby are fun when he is all smiles and coos
+  3.  Journey!? Wow... u just became cooler.  hehe... (is that possible!?)
+
+NEUTRAL EXAMPLES:
+  1.  Both of you
+  2. test test from the LG enV2
+  3. is back home now      gonna miss every one
+
+NEGATIVE EXAMPLES:
+  1.  I`d have responded, if I were going
+  2.  Sooo SAD I will miss you here in San Diego!!!
+  3. my boss is bullying me...

@@ -1,0 +1,40 @@
+======================================================================
+SENTIMENT ANALYSIS REPORT
+======================================================================
+Source CSV: reports_csv_files\sentiment_debug_output.csv
+Text column used: Unnamed: 0
+Rows analyzed: 20
+
+Sentiment distribution:
+  - positive:      5 rows (25.0%)
+  - neutral :      2 rows (10.0%)
+  - negative:     13 rows (65.0%)
+
+Polarity score: -0.4
+  closer to 1 = more positive, closer to -1 = more negative
+
+Average text length by sentiment:
+  - negative: 1.54 avg chars, 1.0 avg words
+  - neutral : 2.0 avg chars, 1.0 avg words
+  - positive: 1.2 avg chars, 1.0 avg words
+
+Top keywords by sentiment:
+  - positive: 
+  - neutral : 
+  - negative: 
+
+Sample examples:
+
+POSITIVE EXAMPLES:
+  1. 1
+  2. 4
+  3. 7
+
+NEUTRAL EXAMPLES:
+  1. 16
+  2. 18
+
+NEGATIVE EXAMPLES:
+  1. 0
+  2. 2
+  3. 3

@@ -1,0 +1,21 @@
+Unnamed: 0,Tweets,Sınıflandırma,sentiment,sentiment_name,char_count,word_count
+0, sayın cumhurbaşkanım turizm için ertelendiğini biliyoruz fakat illa ki uygun zaman vardır lütfen sağlığımız ve psikol ;,saglik ,-1,negative,1,1
+1, bir kere ya bir kere gencinizi dinleyin biz yanlış bir şey demiyoruz ki herkes için doğrusunu söylüyoruz ;,siyaset ,1,positive,1,1
+2,o kadar çok mağduruz ki neye üzüleceğime şaşırdım hiçbir yerden destek alamıyoruz yasak var dışarı çıkamıyoruz   ;,siyaset ,-1,negative,1,1
+3, bu sınav tarihini değiştirirken pedaloglara ve psikologlara danışıldı mı tabiki hayır bu kararı kim verdi turizm bakanI ;,ekonomi ,-1,negative,1,1
+4, turizm yılı gençlik geleceğinizi kurtarır ;,ekonomi ,1,positive,1,1
+5, sizden kıyak isteyen yok turizm yüzünden yediğiniz hakkımızı geri verin haftadır milletün planı alt üst oldu zaten  ;,ekonomi ,-1,negative,1,1
+6, bunu söylemek bile üzüyor ama turizm bu kadar değerliyse sınavı ağustos sonu veya eylül gibi alsanız da olur ;,ekonomi ,-1,negative,1,1
+7, mayıs ı gençlere armağan eden ulu önder mustafa kemal atatürk ten turizm için gençlerin canını ve geleceğini hiçe say ;,siyaset ,1,positive,1,1
+8, turizm mi önemli ülkenin geleceği olan bizler mi ;,ekonomi ,1,positive,1,1
+9, erteleyin son iftarlarimizi rahat yapalım sağlık bakanı riskli diyor turizm bakanın olmayan beynine sokayim ;,saglik ,-1,negative,1,1
+10, turizm mi önemli cidden ;,ekonomi ,-1,negative,2,1
+11, hem turizm hemde bizler önemliyiz o yüzden sınavı daha ileri bir tarihe erteleyin ki iki tarafın gönlü olsun ;,ekonomi ,1,positive,2,1
+12, mağdur olmasın diye tek bir ögrenci için tren durağı işleten japonya turizm geliri için milyonlarca ögrencisini hiçe sayan ülkem;,ekonomi ,-1,negative,2,1
+13, sınav eylül de olabilirdi aileler bu uzun maratondan bunalıp çocuklarına nefes aldırmak için tatile çıkabilirlerdi ;,saglik ,-1,negative,2,1
+14, turizm temmuz içinse ağustos eylule alın sınavı ;,ekonomi ,-1,negative,2,1
+15, sınavı öne almadan önce maskelerin ve dezenfektanların bulaşmayı önleme de yetersiz olduğunu o yüzden evlerden çıkmamamız gerektiğini ne zaman anlayacaksınız ;,saglik ,-1,negative,2,1
+16, dünyaca ünlü turizm merkezi uzungöl de kovid sessizliği ;,kultur ,0,neutral,2,1
+17, diyanet milyar liralık harcama ile bakanlığı geride bıraktı cumhuriyet  yer alan habere göre diyanet aylık harcaması ;,ekonomi ,-1,negative,2,1
+18, sayın erteleyin ki bayram olsun turizm gençlikten önemli değildir ;,siyaset ,0,neutral,2,1
+19, geçen gün turizm bakanı olayında reise had bildirmeye çalışan saçma tavırlar içinde olan birkaç hesap vardı sinirlendim ;,ekonomi ,-1,negative,2,1
