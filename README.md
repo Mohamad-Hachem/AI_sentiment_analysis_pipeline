@@ -33,7 +33,7 @@ The default configuration uses `Qwen/Qwen2.5-3B-Instruct` with **4-bit NF4 quant
 
 ### System Status — GPU check
 
-![Hardware Status](application_screenshots/image_hardware_status.png)
+![Hardware Status](application_screenshots/image_hardware_status_new.png)
 
 The **System Status** page reports GPU name, total VRAM, and currently allocated memory. It also lists installed package versions and confirms whether `HF_TOKEN` is present in the environment.
 
@@ -73,17 +73,17 @@ Point the input at the annotated CSV and click **Generate Report**. The full rep
 
 ### Browse Reports — Summary & Charts
 
-![Browse Report Summary](application_screenshots/image_browse_report_1.png)
+![Browse Report Summary](application_screenshots/image_browse_report_new_1.png)
 
-![Browse Report Charts](application_screenshots/image_browse_report_2.png)
+![Browse Report Charts](application_screenshots/image_browse_report_new_2.png)
 
-![Browse Report Dataset](application_screenshots/image_browse_report_3.png)
+![Browse Report Dataset](application_screenshots/image_browse_report_new_3.png)
 
-![Browse Report Top Words](application_screenshots/image_browse_report_4.png)
+![Browse Report Top Words](application_screenshots/image_browse_report_new_4.png)
 
-![Browse Report Confusion Matrix](application_screenshots/image_browse_report_5.png)
+![Browse Report Confusion Matrix](application_screenshots/image_browse_report_new_5.png)
 
-![Browse Report Downloads](application_screenshots/image_browse_report_6.png)
+![Browse Report Downloads](application_screenshots/image_browse_report_new_6.png)
 
 Six tabs expose the full artifact set for any past run: full report text, metrics and charts, filterable dataset, per-class keyword tables, confusion matrix, and one-click downloads.
 
@@ -274,7 +274,7 @@ Check the [PyTorch installation selector](https://pytorch.org/get-started/locall
 ### 4 — Install project dependencies
 
 ```bash
-pip install transformers datasets bitsandbytes huggingface_hub streamlit pandas ipython
+pip install -r requirements.txt
 ```
 
 ### 5 — Configure environment variables
